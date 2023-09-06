@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Horizontal Navigation */
+ul.horizontal-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #cfcbcb;
+}
+
+ul.horizontal-nav li {
+  display: inline-block;
+  border-right: 1px solid #bbb;
+  margin-right: 10px;
+}
+
+ul.horizontal-nav li:last-child {
+  border-right: none;
+}
+
+ul.horizontal-nav li a {
+  display: block;
+  color: rgb(44, 30, 231);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.horizontal-nav li a:hover:not(.active) {
+  background-color: #666464;
+  color: aliceblue;
+}
+
+ul.horizontal-nav .active {
+  background-color: #abaeae;
+  color: aliceblue;
+}
+
+/* Vertical Navigation */
+.navbar {
+  background-color: #90ece8;
+  width: 250px;
+  height: 65%;
+  position: fixed;
+  top:0;
+  left:0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-right: 2px solid black; /* Add border to the vertical navigation */
+}
+
+.navbar a {
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 20px;
+  color: blue;
+  display: block;
+}
+
+.navbar a:hover {
+  background-color: #FFDC00;
+  color: #fff;
+}
+
+/* Additional Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.box {
+  border: 2px solid black;
+  width: 525px;
+  margin: 10px;
+  padding: 10px;
+  float: right;
+  position:relative;
+  left: -410px;
+}
+
+</style>
+</head>
+<body style="padding-top: 250px; padding-left: 400px;">
+    <h1 style="padding-left: 1px;">Horizontal and Vertical Navigation</h1>
+    <h2 style="padding-left: 400px;"></h2> <!-- Label for Horizontal -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Java</a>
+        <a href="#">CSS</a>
+        <a href="#">HTML</a>
+        <a href="#">Bootstrap</a>
+    </div>
+    <h2 style="padding-left: 100px;"></h2> <!-- Label for Vertical -->
+    <div class="box">
+        <ul class="horizontal-nav">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">Java</a></li>
+            <li><a href="#contact">HTML</a></li>
+            <li><a href="#contact">CSS</a></li>
+            <li><a href="#contact"></a></li>
+        </ul>
+    </div>
+</body>
+</html>
